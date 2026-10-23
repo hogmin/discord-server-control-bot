@@ -19,7 +19,7 @@ async def load_cogs():
             print(f"Loaded cogs.{file[:-3]}")
 
 async def main():
-    DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+    DISCORD_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
     async with bot:
         await load_cogs()
         await bot.start(DISCORD_TOKEN)
